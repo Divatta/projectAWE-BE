@@ -25,7 +25,7 @@ const contactUsController = {
           })
           smtpTransport.sendMail({
             from: process.env.MAIL_ID,
-            to: 'sidkeinwebhub@gmail.com',
+            to: 'inquiriesatthiengineeringworks@gmail.com',
             subject: "Contact Message from user",
             html: `
                 <div style="margin: 20px;">
@@ -58,10 +58,10 @@ const contactUsController = {
         smtpTransport.sendMail({
           from: process.env.MAIL_ID,
           to: req.body.email,
-          subject: "Thank you for connecting with sidkeinwebhub.com",
+          subject: "Thank you for connecting with atthiengineeringworks.com",
           html: `
               <div style="margin: 20px;">
-                <h3>Thank you for connecting with sidkeinwebhub.com,</h3>
+                <h3>Thank you for connecting with atthiengineeringworks.com,</h3>
                 <p> We will reach back to you shortly.</p>  
               </div>
           `
